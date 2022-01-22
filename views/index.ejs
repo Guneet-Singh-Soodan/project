@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>BooksApp</title>
+
+  <!-- Favicon -->
+  <link href="argon-dashboard-master/assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="argon-dashboard-master/assets/vendor/nucleo/css/nucleo.min.css" rel="stylesheet">
+  <link href="argon-dashboard-master/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Argon CSS -->
+  <link type="text/css" href="argon-dashboard-master/assets/css/argon.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="table-responsive">
+    <table class="table align-items-center">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" class="sort">Name</th>
+          <th scope="col" class="sort">Company</th>
+        </tr>
+      </thead>
+      <tbody class="list">
+        <% for(var i=0;i<Data.length;i++) { %>
+        <tr scope="row">
+          <td class="name mb-0 text-sm"><%=Data[i].name%></td>
+          <td class="name mb-0 text-sm"><%=Data[i].company%></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Core -->
+  <script src="argon-dashboard-master/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="argon-dashboard-master/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Argon JS -->
+  <script src="argon-dashboard-master/assets/js/argon.min.js"></script>
+</body>
+
+</html>
